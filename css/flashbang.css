@@ -1,0 +1,16 @@
+body {
+    background-color: #000;
+}
+
+#img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+@keyframes fade-to-black {
+    from { background-color: #fff; }
+    to { background-color: #000; }
+}

@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scrap | Lethal Company Wiki</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/screenshots.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<ul class="navbar">
+			<li class="nav-item"><a href="index.html"><img src="images/logo.png" class="nav-logo"></a></li>
+			<div class="nav-item">
+				<li class="nav-item"><a href="index.html" class="nav-title">Lethal Company Wiki</a></li>
+				<ul class="subnavbar">
+					<li class="nav-item"><a href="entities.html" class="nav-link">Entities</a></li>
+					<li class="nav-item nav-separator"></li>
+					<li class="nav-item"><a href="items.html" class="nav-link">Items</a></li>
+				</ul>
+			</div>
+		</ul>
+
+		<div class="panel">
+			<h1>Scrap</h1>
+            <p><span class="bold">Scrap</span> is the main collectable found in the facilities. Loot tables define where and how often certain scrap can spawn. Unlike Equipment, Scrap is lost upon team death, this includes items that have a use like Stop Signs and the Double Barrel.</p>
+            <br>
+
+            <h2>Scrap Properties</h2>
+            <hr>
+            <ul>
+                <li><span class="bold">Weight:</span> The carrying weight of this item. Stamina depletes faster and regenerates more slowly the larger the sum of the weights of the carried items</li>
+                <li><span class="bold">Min / Max Value:</span> The selling price of the scrap when sold to the company at 100% value.
+                    <ul>
+                        <li class="italic">Note: The value of items can be <span class="bold">heavily inflated</span> if the item is retrieved from a Gift Box.</li>
+                    </ul>
+                </li>
+                <li><span class="bold">Conductive:</span> Determines if the scrap can be struck by lightning in Stormy weather</li>
+                <li><span class="bold">Two handed:</span> Determines if the scrap will give you the Hands full status.</li>
+                <li><span class="bold">Battery:</span> Determines if the scrap has a battery that can deplete over time or by being used.</li>
+                <li><span class="bold">Info:</span> Small summary or important facts about the scrap.</li>
+            </ul>
+            <br>
+
+            <h2>List of Scrap</h2>
+            <hr>
+            <table>
+                <tr id="header">
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Min Value</th>
+                    <th>Max Value</th>
+                    <th>Weight</th>
+                    <th>Conductive</th>
+                    <th>Has Battery</th>
+                    <th>Two Handed</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Airhorn</td>
+                    <td><img src="images/scrap/Airhorn.webp" class="scrap-img"></td>
+                    <td>52</td>
+                    <td>72</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Plays an air horn sound upon use.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Apparatus</td>
+                    <td><img src="images/scrap/Apparatus.webp" class="scrap-img"></td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>32</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>
+                        When taken, all Secure doors will open and all lights will turn off. The apparatus emits a faint glow. Players will be warned of a radiation increase when removing the apparatus, this radiation increase may amplify the entity spawn rate and or agitate hostile entities. Taking this out is an irreversible process.
+                        <ul>
+                            <li>Its value in-game is shown as "???", but will always give 80 Company Credits once sold (assuming the company is buying at 100%).</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bee Hive</td>
+                    <td><img src="images/scrap/BeehiveIcon.webp" class="scrap-img"></td>
+                    <td>40</td>
+                    <td>150</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>
+                        If picked up, causes <a href="circuit_bees.html">Circuit Bees</a> to target the player or fly around the map aimlessly if they are too far from any nest<br>
+                        Circuit bees also attack employees who get too close to the Bee Hive. (roughly scanning distance)
+                    </td>
+                </tr>
+                <tr>
+                    <td>Big bolt</td>
+                    <td><img src="images/scrap/BigBoltIcon.webp" class="scrap-img"></td>
+                    <td>20</td>
+                    <td>32</td>
+                    <td>19</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Bottles</td>
+                    <td><img src="images/scrap/Bottles.webp" class="scrap-img"></td>
+                    <td>44</td>
+                    <td>56</td>
+                    <td>19</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Brass bell</td>
+                    <td><img src="images/scrap/Bell.webp" class="scrap-img"></td>
+                    <td>48</td>
+                    <td>80</td>
+                    <td>24</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Candy</td>
+                    <td><img src="images/scrap/Candy.webp" class="scrap-img"></td>
+                    <td>6</td>
+                    <td>36</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Cash register</td>
+                    <td><img src="images/scrap/Cash_register.webp" class="scrap-img"></td>
+                    <td>80</td>
+                    <td>160</td>
+                    <td>84</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>
+                        Plays a cash register sound upon use.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Chemical jug</td>
+                    <td><img src="images/scrap/Chemical_jug.webp" class="scrap-img"></td>
+                    <td>32</td>
+                    <td>84</td>
+                    <td>32</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>
+                        Only spawns on Vow.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Clown horn</td>
+                    <td><img src="images/scrap/Clown_horn_png.webp" class="scrap-img"></td>
+                    <td>52</td>
+                    <td>72</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Plays a clown horn sound upon use.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Coffee mug</td>
+                    <td><img src="images/scrap/Coffee_mug.webp" class="scrap-img"></td>
+                    <td>24</td>
+                    <td>68</td>
+                    <td>5</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Comedy</td>
+                    <td><img src="images/scrap/Comedy_mask.webp" class="scrap-img"></td>
+                    <td>28</td>
+                    <td>52</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        If put on, has a 65% chance to turn a player into a Masked. Converts players after a random interval of time typically ranging from roughly 1 to 20 seconds.<br>
+                        Note: Will not convert players who are holding out the mask, only players who hold it onto their face.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Cookie mold pan</td>
+                    <td><img src="images/scrap/Cookie_mold_pan.webp" class="scrap-img"></td>
+                    <td>12</td>
+                    <td>40</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>DIY-Flashbang</td>
+                    <td><img src="images/scrap/DIY_Flashbang.webp" class="scrap-img"></td>
+                    <td>10</td>
+                    <td>28</td>
+                    <td>5</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Its function is similar to that of a Stun grenade, though it will detonate upon use and cannot be thrown, the detonation also destroys the item.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Double-barrel</td>
+                    <td><img src="images/scrap/ShotgunIcon.webp" class="scrap-img"></td>
+                    <td>30</td>
+                    <td>90</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Dropped by Nutcrackers, if loaded with Shotgun shells, it can be shot.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Dust pan</td>
+                    <td><img src="images/scrap/Dust_pan_png.webp" class="scrap-img"></td>
+                    <td>12</td>
+                    <td>32</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Only spawns on Experimentation.</td>
+                </tr>
+                <tr>
+                    <td>Egg beater</td>
+                    <td><img src="images/scrap/Egg_beater.webp" class="scrap-img"></td>
+                    <td>12</td>
+                    <td>44</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Fancy lamp</td>
+                    <td><img src="images/scrap/Fancy_lamp.webp" class="scrap-img"></td>
+                    <td>60</td>
+                    <td>128</td>
+                    <td>21</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Emits a moderate light below it</td>
+                </tr>
+                <tr>
+                    <td>Flask</td>
+                    <td><img src="images/scrap/Flask2resized.webp" class="scrap-img"></td>
+                    <td>16</td>
+                    <td>44</td>
+                    <td>19</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Gift Box</td>
+                    <td><img src="images/scrap/GiftBoxTransparent.webp" class="scrap-img"></td>
+                    <td>12</td>
+                    <td>28</td>
+                    <td>19</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Using the Gift Box destroys it and drops a random scrap item. This item can have a value higher than the usual value of the item. It is advised to only open gift boxes on the ship as it is possible to give a 2 handed item or an item that is heavier than the gift box itself.</td>
+                </tr>
+                <tr>
+                    <td>Gold bar</td>
+                    <td><img src="images/scrap/Goldbar.webp" class="scrap-img"></td>
+                    <td>102</td>
+                    <td>210</td>
+                    <td>77</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>While being the most valuable scrap to find, it is also the heaviest one handed item and extremely rare.</td>
+                </tr>
+                <tr>
+                    <td>Golden Cup</td>
+                    <td><img src="images/scrap/Golden_cup.webp" class="scrap-img"></td>
+                    <td>40</td>
+                    <td>80</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hair brush</td>
+                    <td><img src="images/scrap/Hair_brush.webp" class="scrap-img"></td>
+                    <td>8</td>
+                    <td>36</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Hairdryer</td>
+                    <td><img src="images/scrap/Hair_dryer.webp" class="scrap-img"></td>
+                    <td>60</td>
+                    <td>100</td>
+                    <td>7</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>
+                        Can be used ten times with each use taking 10% of its power. While on, it makes a loud blowing noise.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Jar of pickles</td>
+                    <td><img src="images/scrap/Jar_of_pickles.webp" class="scrap-img"></td>
+                    <td>32</td>
+                    <td>60</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Large axel</td>
+                    <td><img src="images/scrap/Large_axle.webp" class="scrap-img"></td>
+                    <td>36</td>
+                    <td>56</td>
+                    <td>16</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Laser pointer</td>
+                    <td><img src="images/scrap/Laser_pointer.webp" class="scrap-img"></td>
+                    <td>32</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Can be used to emit a dim orange laser similar to that of a Turret. This laser is visible even through walls. The length of the laser is unclear and needs further testing.</td>
+                </tr>
+                <tr>
+                    <td>Magic 7 ball</td>
+                    <td><img src="images/scrap/Magic_7_ball.webp" class="scrap-img"></td>
+                    <td>36</td>
+                    <td>72</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Magnifying glass</td>
+                    <td><img src="images/scrap/Magnifying_glass.webp" class="scrap-img"></td>
+                    <td>44</td>
+                    <td>60</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Old phone</td>
+                    <td><img src="images/scrap/Old_phone.webp" class="scrap-img"></td>
+                    <td>48</td>
+                    <td>64</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Plays a dial tone or screaming sound occasionally.<br>
+                        Can alert <a href="eyeless_dogs.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Painting</td>
+                    <td><img src="images/scrap/Painting.webp" class="scrap-img"></td>
+                    <td>60</td>
+                    <td>124</td>
+                    <td>32</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Perfume bottle</td>
+                    <td><img src="images/scrap/Perfume_bottle.webp" class="scrap-img"></td>
+                    <td>48</td>
+                    <td>104</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Pill bottle</td>
+                    <td><img src="images/scrap/Pill_bottle.webp" class="scrap-img"></td>
+                    <td>16</td>
+                    <td>40</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Plastic fish</td>
+                    <td><img src="images/scrap/PlasticFishIcon.webp" class="scrap-img"></td>
+                    <td>28</td>
+                    <td>40</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Player Body</td>
+                    <td><img src="images/scrap/Player_body.webp" class="scrap-img"></td>
+                    <td>5</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>
+                        Retrieving these lowers the penalty fine for players dying. This will de-spawn when leaving a planet so one can only be sold if a player dies at the Company Building. Selling the body prevents you from being able to retrieve it making you receive the whole fine for someone dying. This is only wise to do if you need roughly 5 credits to meet the quota.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Red soda</td>
+                    <td><img src="images/scrap/Red_soda.webp" class="scrap-img"></td>
+                    <td>18</td>
+                    <td>90</td>
+                    <td>7</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Remote</td>
+                    <td><img src="images/scrap/Remote.webp" class="scrap-img"></td>
+                    <td>20</td>
+                    <td>48</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Can be used to toggle the ship's light.<br>
+                        Will not alert <a href="eyeless_dog.html">Eyeless Dogs</a> with clicking.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Ring</td>
+                    <td><img src="images/scrap/Ring.webp" class="scrap-img"></td>
+                    <td>52</td>
+                    <td>80</td>
+                    <td>16</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Robot toy</td>
+                    <td>
+                        <img src="images/scrap/RobotToyImage2.webp" class="scrap-img soundy-img" data-sfx="sounds/RobotToyCheer.wav"><br>
+                        <span class="table-sound-desc">Click for sound</span>
+                    </td>
+                    <td>56</td>
+                    <td>88</td>
+                    <td>21</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Plays noise when in the player's inventory. There's a slim chance it won't play a noise when being picked up or equipped. It can appear smiling or frowning when held, its arm moving more if happy and less if sad. This is purely visual and has no affect on gameplay.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Rubber Ducky</td>
+                    <td><img src="images/scrap/RubberDuckyImage2.webp" class="scrap-img"></td>
+                    <td>2</td>
+                    <td>100</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Makes a quacking noise when equipped or dropped.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Steering wheel</td>
+                    <td><img src="images/scrap/Steering_wheel.webp" class="scrap-img"></td>
+                    <td>16</td>
+                    <td>32</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Stop sign</td>
+                    <td><img src="images/scrap/StopSignIcon.webp" class="scrap-img"></td>
+                    <td>20</td>
+                    <td>52</td>
+                    <td>21</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Has the same function as a shovel but is around thrice as heavy.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tattered metal sheet</td>
+                    <td><img src="images/scrap/TatteredMetalSheetImage2.webp" class="scrap-img"></td>
+                    <td>10</td>
+                    <td>22</td>
+                    <td>26</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tea kettle</td>
+                    <td><img src="images/scrap/Tea_kettle.webp" class="scrap-img"></td>
+                    <td>32</td>
+                    <td>56</td>
+                    <td>21</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Teeth</td>
+                    <td><img src="images/scrap/Teeth.webp" class="scrap-img"></td>
+                    <td>60</td>
+                    <td>84</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Has a chance to start chattering and make noise when equipped or dropped. If dropped whilst chattering it will move around in a small circle motion.<br>
+                        Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Toothpaste</td>
+                    <td><img src="images/scrap/Toothpaste.webp" class="scrap-img"></td>
+                    <td>14</td>
+                    <td>48</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Toy cube</td>
+                    <td><img src="images/scrap/Toy_cube.webp" class="scrap-img"></td>
+                    <td>24</td>
+                    <td>44</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Tragedy</td>
+                    <td><img src="images/scrap/Tragedy2.webp" class="scrap-img"></td>
+                    <td>28</td>
+                    <td>52</td>
+                    <td>11</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        If put on, has a 100% chance to turn a player into a Masked. Converts players nearly instantly.<br>
+                        Note: Will not convert players who are holding out the mask, only players who have put it on.
+                    </td>
+                </tr>
+                <tr>
+                    <td>V-type engine</td>
+                    <td><img src="images/scrap/VTypeEngineIcon.webp" class="scrap-img"></td>
+                    <td>20</td>
+                    <td>56</td>
+                    <td>16</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Whoopie-Cushion</td>
+                    <td>
+                        <img src="images/scrap/WhoopieCushion.webp" class="scrap-img soundy-img" data-sfx="sounds/WhoopieCushion.wav">
+                        <span class="table-sound-desc">Click for sound</span>
+                    </td>
+                    <td>6</td>
+                    <td>20</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Makes a noise when stepped on.<br>
+                        Can be used as an alternative for the bell to sell scrap at the Company counter by stepping on it from a distance. Can alert <a href="eyeless_dog.html">Eyeless Dogs</a>.
+                    </td>
+                </tr>
+                <tr>
+                    <td>Yield sign</td>
+                    <td><img src="images/scrap/Yield_sign.webp" class="scrap-img"></td>
+                    <td>18</td>
+                    <td>36</td>
+                    <td>42</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>
+                        Has the same function as a shovel but weighs significantly more.
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <script src="js/imagesounder.js"></script>
+	</body>
+</html>

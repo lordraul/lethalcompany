@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Store | Lethal Company Wiki</title>
+		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/screenshots.css">
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+	</head>
+	<body>
+		<ul class="navbar">
+			<li class="nav-item"><a href="index.html"><img src="images/logo.png" class="nav-logo"></a></li>
+			<div class="nav-item">
+				<li class="nav-item"><a href="index.html" class="nav-title">Lethal Company Wiki</a></li>
+				<ul class="subnavbar">
+					<li class="nav-item"><a href="entities.html" class="nav-link">Entities</a></li>
+					<li class="nav-item nav-separator"></li>
+					<li class="nav-item"><a href="items.html" class="nav-link">Items</a></li>
+				</ul>
+			</div>
+		</ul>
+
+		<div class="panel">
+			<h1>Store</h1>
+            <p>The <span class="bold">Store</span> is a game mechanic in <a href="index.html" class="italic">Lethal Company</a> that allows various items to be purchased.</p>
+            
+            <h2>Info</h2>
+            <hr>
+            <p>Typing "store" into the Terminal will print a full list of the items available, including the current Profit Quota's rotation of ship decor and item sales.</p>
+            <p>An item may be purchased by typing in its name (or short-handed by typing at least the first three letters (i.e. "fla" for the Flashlight or "pro" for the Pro-flashlight) and a message will then appear asking to confirm or deny the order (you can also shorthand confirming/denying an order by using "c" or "d"). Multiples of a singular item may be purchased at once by typing a number after the name, though multiple different items cannot be purchased with one command.</p>
+            <p>Items will be shipped to the current <a href="moons.html">Moon</a> via the Delivery System; if ordering from Orbit, the shipment will wait until you land before the vehicle begins its descent. Multiple purchases made fast enough — or made before landing — will be batched into a singular shipment. Once the delivery vehicle lands, the items must be quickly retrieved from it before it takes off again; the rocket will leave regardless once 30 seconds has elapsed after it lands, and the Company does not refund incomplete deliveries.</p>
+            <p>Only one delivery vehicle may land at a time; if an order contains more than 12 items, or if there is a delay between multiple purchases, the items will be split between multiple vehicles, with each one queued up to arrive shortly after the previous vehicle leaves.</p>
+            <br>
+            <h2>Equipment</h2>
+            <hr>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                    <th>Weight</th>
+                    <th>Conductive</th>
+                    <th>Battery</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Boombox</td>
+                    <td><img src="images/BoomboxIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>60</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>These jamming tunes are great for a morale boost on your crew!</td>
+                </tr>
+                <tr>
+                    <td>Extension Ladder</td>
+                    <td><img src="images/ExtensionLadderIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>60</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>The extension ladder can reach as high as nine meters! Use it to scale any cliff and reach for the stars! To save batteries the extension ladder automatically stores itself after 18 seconds.</td>
+                </tr>
+                <tr>
+                    <td>Flashlight</td>
+                    <td><img src="images/TinyFlashlightIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>The most affordable light source. It's even waterproof!</td>
+                </tr>
+                <tr>
+                    <td>Jetpack</td>
+                    <td><img src="images/JetpackIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>700</td>
+                    <td>52</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>This device will get you around anywhere! Just use it responsibly!</td>
+                </tr>
+                <tr>
+                    <td>Lockpicker</td>
+                    <td><img src="images/LockpickerIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>20</td>
+                    <td>16</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>Lock-pickers will unlock your limitless potential for efficiency on the job. Powered by proprietary AI software, they will get you access through any locked door.</td>
+                </tr>
+                <tr>
+                    <td>Pro-flashlight</td>
+                    <td><img src="images/FlashlightIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>25</td>
+                    <td>5</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>The pro-flashlight is a slightly more expensive, slightly heavier, but overall superior version of the Flashlight. It has a <span class="bold">wider cone of light</span>, a <span class="bold">longer range</span>, and is <span class="bold">much brighter</span>. In addition, it has over <span class="bold">double the battery capacity</span>.</td>
+                </tr>
+                <tr>
+                    <td>Radar Booster</td>
+                    <td><img src="images/RadarBoosterIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>60</td>
+                    <td>19</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>
+                        <p>Radar boosters come with many uses!</p>
+                        <p>Use the "SWITCH" command before the radar booster's name to view it on the main monitor. It must be activated.</p>
+                        <p>Use the "PING" command before the radar booster's name to play a special sound from the device.</p>
+                        <p>Use the "FLASH" command before the radar booster's name to have a "flashbang" effect to both entities and employees.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shovel</td>
+                    <td><img src="images/ShovelIcon.webp" class="store-img"></td>
+                    <td>Weapon</td>
+                    <td>30</td>
+                    <td>8</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>The shovel is primarily used to eliminate many creatures but is also capable of harming teammates. It has the lowest weight of any offensive melee weapon, making it a viable option for self-defense. The shovel deals 30 damage to employees. Different entities have their own "Shovel HP".</td>
+                </tr>
+                <tr>
+                    <td>Spray Paint</td>
+                    <td><img src="images/Spraycan.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>50</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>The Spray Paint can be used just for fun to make art or otherwise mess around with. It can also be used practically, such as to mark dead ends and the way back to prevent getting lost.</td>
+                </tr>
+                <tr>
+                    <td>Stun grenade</td>
+                    <td>
+                        <a href="flashbang.html"><img src="images/StunGrenadeIcon.webp" class="store-img"></a>
+                        <span class="bold italic flashbang-text">Click me!!!</span>
+                    </td>
+                    <td>Weapon</td>
+                    <td>30</td>
+                    <td>5</td>
+                    <td>No</td>
+                    <td>No</td>
+                    <td>A non-lethal explosive that will stun most creatures for 5 seconds. Once the pin is removed, the grenade will detonate after 3 seconds.</td>
+                </tr>
+                <tr>
+                    <td>TZP-Inhalant</td>
+                    <td><img src="images/TZPIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>120</td>
+                    <td>0</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                    <td>This safe and legal medicine can be administered to see great benefits to your performance on the job! Your ability to move LONG distances while carrying HEFTY objects will be second to none! Warning: TZP gas may impact the brain with extended exposure. Follow instructions manual provided with the canister. Don't forget to share!</td>
+                </tr>
+                <tr>
+                    <td>Walkie-talkie</td>
+                    <td><img src="images/WalkieTalkieIcon.webp" class="store-img"></td>
+                    <td>Gear</td>
+                    <td>12</td>
+                    <td>0</td>
+                    <td>No</td>
+                    <td>Yes</td>
+                    <td>Useful for keeping in touch! Hear other players when the walkie talkie is in your inventory. Must be in your hand and pressed down to transmit voice.</td>
+                </tr>
+                <tr>
+                    <td>Zap gun</td>
+                    <td><img src="images/ZapGunIcon.webp" class="store-img"></td>
+                    <td>Weapon</td>
+                    <td>400</td>
+                    <td>11</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>
+                        <p>The most specialized self-protective equipment, capable of sending upwards of 80,000 volts!</p>
+                        <p>To keep it targeted as long as possible, pull the gun side-to-side to counter the bend and fight against the pull of the electric beam. It can only stun for as long as you keep the current flowing.</p>
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <h2>Ship Upgrades</h2>
+            <hr>
+            <p>Ship upgrades add extra functions to your ship.</p>
+            <p>When purchased, the respective upgrade will remain available to use in the ship until a game over.</p>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Info</th>
+                </tr>
+                <tr>
+                    <td>Teleporter</td>
+                    <td><img src="images/Teleporter.webp" class="upgrade-img"></td>
+                    <td>375</td>
+                    <td>Press the button to activate the teleporter. It will teleport whoever is currently being monitored on the ship's radar. They will not be able to keep any of their held items through the teleport. It takes about ten seconds to recharge.</td>
+                </tr>
+                <tr>
+                    <td>Inverse Teleporter</td>
+                    <td><img src="images/Inverse_teleporter.webp" class="upgrade-img"></td>
+                    <td>425</td>
+                    <td>
+                        <p>The inverse teleporter is a modified teleporter which will teleport you to a random position outside the ship. All your items will be dropped at the teleporter before transport. The inverse teleporter can be used by everyone at once and has a 3.5 minute cooldown.</p>
+                        <p>DISCLAIMER: The inverse teleporter can only transport you in, not out, and you may become trapped. The Company is not responsible for injury or replacement of heads and limbs induced by quantum entanglement and bad luck.</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Loud horn</td>
+                    <td><img src="images/Loud_horn.webp" class="upgrade-img"></td>
+                    <td>100</td>
+                    <td>Used to communicate with any crew member from any distance, no walkie talkie required! The horn can be heard from anywhere. But what does it mean? That's up to you!</td>
+                </tr>
+                <tr>
+                    <td>Signal Translator</td>
+                    <td><img src="images/Signal_translator.webp" class="upgrade-img"></td>
+                    <td>255</td>
+                    <td>Able to transmit messages to other crew members. Limited to 9 characters.</td>
+                </tr>
+            </table>
+        </div>
+	</body>
+</html>
